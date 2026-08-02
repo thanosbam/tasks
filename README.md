@@ -110,4 +110,5 @@ php  task4.php                # needs a running PostgreSQL
   lives inline in `task1.php` and needs to be split out into its own file.
 - The database credentials are still placeholders (`your_db` / `your_user` / `your_pass`).
 - It stops after fetching the raw rows. The last step — running each row through
-  `normalizeCompanyData()` and inserting the winners into `normalized_companies` — is not written.
+  `normalizeCompanyData()` and inserting the highest-priority row per company into
+  `normalized_companies` — is not written.
